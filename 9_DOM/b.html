@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>b.html</title>
+</head>
+<body>
+  <button>hello</button>
+  <button class="js-button">second-button</button>
+
+  <script>
+    console.log(document.querySelector('button').innerHTML);
+    document.querySelector('button').innerHTML = 'changed';
+
+    // we select the second button by class attribute through [.]
+    const buttonElement = document.querySelector('.js-button');
+
+    console.log(document.title);
+    // document.title = 'changed';
+    // console.log(document.title);
+
+    console.log(document.body);
+    console.log(typeof document.body); // object
+    console.log(typeof document.title); // string
+    // console.log(typeof document.scripts); // object
+
+    console.log(document.body.innerHTML); // puts entire html in body into js
+    document.body.innerHTML = 'hello';
+    
+  </script>
+  
+</body>
+</html>
+
+<!-- every html element has innerHTML property which sets or returns the content of the element -->

@@ -1,0 +1,8 @@
+Non-blocking: While await pauses the execution of the async function, it doesn’t block the entire JavaScript runtime. Other code outside the async function can continue to run.
+
+Perceived Delay: The “pause” caused by await is only within the async function. It allows other tasks to proceed, making your application more efficient.
+
+We know that async await makes the code looks synchronous , but this is seen only within the async function , when we call await on line 1 insided async() then line 2 cant execute until the promise is resolved 
+while other parts of your code outside the async() function can still run smoothly without any delay , in this way responsiveness is enhanced with the use of async await . 
+
+note : that forEach doesn't works with async await

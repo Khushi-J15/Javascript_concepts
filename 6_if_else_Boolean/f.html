@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game</title>
+</head>
+<body>
+  <script>
+    let rn = Math.random(); // generates a value b/w 0 and 1
+    let result = '';
+    let guess = 'heads';
+    if(rn < 0.5){
+      result = 'heads';
+    }
+    else{
+      result = 'tails';
+    }
+
+    if(result === guess){
+      console.log('you win!');
+    }
+    else{
+      console.log('you lose!');
+    }
+
+</script>
+</body>
+</html>

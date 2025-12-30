@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>subscribe</title>
+</head>
+<body>
+  <p>YouTube Subscribe Button</p>
+  <button class="js-button" onclick="
+      subscribe();
+  "> Subscribe</button>
+  <script>
+    function subscribe(){
+      const buttonElement = document.querySelector('.js-button');
+
+      // check the difference between innerHTML and innerText
+      if(buttonElement.innerText === 'Subscribe'){ //here try replacing
+        buttonElement.innerHTML = 'Subscribed';
+      }
+      else{
+        buttonElement.innerHTML = 'Subscribe';
+      }
+    }
+
+  </script>
+</body>
+</html>

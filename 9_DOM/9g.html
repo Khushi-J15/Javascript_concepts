@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>event-onkeyup</title>
+</head>
+<body>
+  <input onkeyup="
+    display();
+    " class="js-input" placeholder="type something">
+
+    <p class="js-visible"></p>
+
+    <script>
+      function display(){
+        let inputElement = document.querySelector('.js-input');
+        let text = inputElement.value;
+        document.querySelector('.js-visible').innerHTML = text;
+      }
+    </script>
+</body>
+</html>
+
+<!-- whenever we type in the text box update the text on the page -->

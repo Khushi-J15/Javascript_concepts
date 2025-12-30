@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11g</title>
+</head>
+<body>
+  
+  <script>
+    let array = [-2, -1, 0, 99];
+    let newArray = [];
+
+    increment(array);
+    
+    function increment(array){
+      for(let i=0; i<array.length; i++){
+        newArray.push(array[i] + 1);
+      }
+      return array;
+    }
+    
+    console.log(array);
+    console.log(newArray);
+
+    if(array === newArray){
+      console.log('true');
+    }
+    else{
+      console.log('false');
+    }
+
+  </script>
+
+</body>
+</html>
+
+<!-- 
+[-2, -1, 0, 99]
+[-1, 0, 1, 100]
+false -->

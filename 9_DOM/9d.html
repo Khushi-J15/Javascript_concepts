@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>9d.html</title>
+</head>
+<body>
+  <input placeholder="type here" class="js-input">
+
+  <button onclick="
+    display();
+  ">Submit</button>
+
+  <p class="visible"></p>
+
+  <script>
+    function display(){
+      let inputElement = document.querySelector('.js-input');
+
+      let text= inputElement.value;
+
+      document.querySelector('.visible').innerHTML = `Your Name is : ${text}`;
+    }  
+  </script>
+</body>
+</html>
+
+<!-- take refrence from amazon project.html and try adding feature as when we type text and press enter -->

@@ -1,0 +1,15 @@
+console.log(Math.abs(-4.5))
+console.log(Math.PI)
+console.log(Math.SQRT2)
+console.log(Math.LOG2E)
+console.log(Math.trunc(Math.PI))
+console.log(Math.round(8.9))
+console.log(Math.ceil(9.1))
+console.log(Math.floor(9.1))
+console.log(Math.pow(5,2))
+console.log(Math.min(9, 3.9, 5))
+console.log(Math.max(9, 3, 5))
+console.log(Math.random())
+console.log(Math.random())
+console.log(Math.floor(Math.random() * 10) + 1) // 1 - 10
+// console.log(Math.ceil(Math.random() * 10)) don't use 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>amazon</title>
+</head>
+<body>
+<!-- every event listener has event object -->
+<!-- event listener eg-: onclick, onkeydown, onmouseenter -->
+  <p>Amazon Shipping Calculator</p>
+
+  <input placeholder="Cost of order" class="js-cost-input" onkeydown="
+    handleCostKeydown(event);
+  ">
+    <button onclick="
+    calculateTotal();
+    ">Calculate</button>
+
+    <p class="js-total-cost"></p> <!-- this para will be visible after we have given input and calculated it -->
+
+  <script>
+
+    function handleCostKeydown(event){
+      if(event.key === 'Enter'){
+        calculateTotal();
+      }
+    }
+
+    function calculateTotal(){
+      const inputElement = document.querySelector('.js-cost-input');
+      let cost = Number(inputElement.value) * 100; // takes out the text from input box into js
+      // console.log(cost);
+      
+      if(cost < 4000){
+        cost = cost + 1000;
+      }
+
+      document.querySelector('.js-total-cost').innerHTML = `$${cost/100}`;
+
+    }
+
+  </script>
+</body>
+</html>
+
+<!-- Fix = calculate the number in cents and then
+       *       convert back to dollars at the end. -->
+
+       <!-- 1$ = 100cents  -->

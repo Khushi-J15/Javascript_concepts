@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const foods = ['egg','apple','egg','egg','spinach'];
+
+    function removeEggs(foods){
+     const copyOfFoods = foods.slice();
+     const reversed = copyOfFoods.reverse();
+     console.log(reversed);
+     let eggsRemoved = 0;
+     const result = [];
+
+     for(let i=0; i<reversed.length; i++){
+      if(reversed[i] === 'egg' && eggsRemoved < 2){
+        eggsRemoved++;
+        continue;
+      }
+      result.push(reversed[i]);
+     }
+     return result.reverse();
+    }
+
+    console.log(removeEggs(foods));
+    console.log(foods);
+  </script>
+</body>
+</html>
+
+<!-- reversing without modifying the original array -->

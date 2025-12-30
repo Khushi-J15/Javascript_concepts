@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function removeEggs(foods){
+      const reversedFood = foods.reverse();
+      // step 1 reverse the array
+      const result = [];
+      let eggsRemoved = 0;
+      // step 2 delete first two eggs of reversed array
+      for(let i=0; i<foods.length; i++){
+        if(foods[i] === 'egg' && eggsRemoved < 2){
+          eggsRemoved++;
+          continue;
+        }
+        result.push(foods[i]);
+      }
+
+      return result.reverse();
+    }
+
+    console.log(removeEggs(['egg','apple','egg','egg','spinach']));
+  </script>
+</body>
+</html>
+
+<!-- delete last two eggs -->
+
+<!-- ['egg', 'apple', 'spinach'] -->

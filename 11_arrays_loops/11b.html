@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11b.html</title>
+</head>
+<body>
+  <script>
+    let arr = [2, 6, 1, 89, 56];
+    const swappedArray = arraySwap(arr);
+    console.log(swappedArray);
+    
+    function arraySwap(array){
+      let temp = array[0];
+      array[0] = array[array.length - 1];
+      array[array.length - 1] = temp;
+      return array;
+    }
+  </script>
+</body>
+</html>

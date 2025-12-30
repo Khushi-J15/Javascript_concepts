@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>9c.html</title>
+</head>
+<body>
+
+  <button onclick="
+    display('heads');
+    ">heads</button>
+
+  <button onclick="
+    display('tails');
+  ">tails</button>
+
+  <p class="js-para"></p>
+
+  <script>
+    let paraElement = document.querySelector('.js-para');
+    function display(trial){
+  
+        paraElement.innerHTML = `You Chose : ${trial}`;
+
+    }
+  </script>
+</body>
+</html>

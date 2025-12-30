@@ -1,0 +1,11 @@
+The __proto__ is an object within every object that points out (references) the prototype that has been set for that object. __proto__ is the actual object that is used in the lookup chain to resolve methods, etc.
+
+The prototype property is only present for functions and is a property that’s set only if you’re using the ‘new’ keyword when creating objects with this (constructor) function. As just mentioned, this means that it will only be available via the constructor of the object that’s created using the ‘new’ keyword.
+
+] Objects have proto property
+]  All the object constructors (function) have prototype properties.
+
+
+__proto__: Used by individual objects to find properties and methods.
+
+prototype: Used by constructor functions to define properties and methods for all objects they create.

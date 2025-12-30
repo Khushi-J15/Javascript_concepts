@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>a.html</title>
+</head>
+<body>
+
+  <button onclick="
+    display();
+    ">Click</button>
+
+    <p class="js-display-Array"></p>
+
+  <script>
+    const myArray = [10, 4, 89, 100];
+    console.log(myArray);
+
+    const paraElement =  document.querySelector('.js-display-Array');
+
+    function display(){
+      // paraElement.innerHTML = `This is an Array : ${myArray}`;
+      paraElement.innerHTML = `<button>${myArray}</button>`;
+    }
+
+  </script>
+</body>
+</html>
+
+<!-- here we have displayed the result on another button using dom ... this is called generating html using js -->
